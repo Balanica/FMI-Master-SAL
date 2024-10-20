@@ -26,6 +26,4 @@ tn, tp, fn, fp = confusion_matrix(y_train, prediction).ravel()
 tpr = tp / (tp + fn)
 tnr = tn / (tn + fp)
 balanced_accuracy = (tpr + tnr) / 2
-# acc = balanced_accuracy_score(y_train, prediction)
-# acc2 = accuracy_score(y_train, prediction)
 print(balanced_accuracy)
